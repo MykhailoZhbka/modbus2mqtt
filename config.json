@@ -1,0 +1,152 @@
+{
+    "plugin": {
+        "modbus": {
+            "config_update_interval": 10,
+            "device_update_interval": 5,
+            "device_path": "/dev/ttyUSB1",
+            "poll_timeout": 5,
+            "devicelist": {
+                "slave1": {
+                    "id": 1,
+                    "datapoints": {
+                        "relay_0": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 0
+                        },
+                        "relay_1": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 1
+                        },
+                        "relay_2": {
+                            "friendly_name": "Light 2",
+                            "fc": 5,
+                            "address": 2
+                        },
+                        "relay_3": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 3
+                        },
+                        "relay_4": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 4
+                        },
+                        "relay_5": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 5
+                        },
+                        "relay_6": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 6
+                        },
+                        "relay_7": {
+                            "friendly_name": "Light 1",
+                            "fc": 5,
+                            "address": 7
+                        }
+                    }
+                },
+                "slave2": {
+                    "id": 20,
+                    "datapoints": {
+                        "value200": {
+                            "friendly_name": "value 200",
+                            "fc": 2,
+                            "address": 0
+                        },
+                        "value201": {
+                            "friendly_name": "value 201",
+                            "fc": 2,
+                            "address": 1
+                        },
+                        "value202": {
+                            "friendly_name": "value 201",
+                            "fc": 2,
+                            "address": 2
+                        },
+                        "value203": {
+                            "friendly_name": "value 203",
+                            "fc": 2,
+                            "address": 3
+                        },
+                        "value204": {
+                            "friendly_name": "value 204",
+                            "fc": 2,
+                            "address": 4
+                        },
+                        "value205": {
+                            "friendly_name": "value 205",
+                            "fc": 2,
+                            "address": 5
+                        },
+                        "value300": {
+                            "friendly_name": "value 300",
+                            "fc": 3,
+                            "address": 0
+                        },
+                        "value301": {
+                            "friendly_name": "value 301",
+                            "fc": 3,
+                            "address": 1
+                        },
+                        "value302": {
+                            "friendly_name": "value 302",
+                            "fc": 3,
+                            "address": 2
+                        },
+                        "value303": {
+                            "friendly_name": "value 303",
+                            "fc": 3,
+                            "address": 3
+                        },
+                        "value304": {
+                            "friendly_name": "value 304",
+                            "fc": 3,
+                            "address": 4
+                        },
+                        "value305": {
+                            "friendly_name": "value 305",
+                            "fc": 3,
+                            "address": 5
+                        },
+                        "value400": {
+                            "friendly_name": "value 400",
+                            "fc": 4,
+                            "address": 0
+                        },
+                        "value401": {
+                            "friendly_name": "value 401",
+                            "fc": 4,
+                            "address": 1
+                        },
+                        "value402": {
+                            "friendly_name": "value 402",
+                            "fc": 4,
+                            "address": 2
+                        },
+                        "value403": {
+                            "friendly_name": "value 403",
+                            "fc": 4,
+                            "address": 3
+                        },
+                        "value404": {
+                            "friendly_name": "value 404",
+                            "fc": 4,
+                            "address": 4
+                        },
+                        "value405": {
+                            "friendly_name": "value 405",
+                            "fc": 4,
+                            "address": 5
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

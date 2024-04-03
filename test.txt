@@ -1,0 +1,9 @@
+mosquitto_pub -h 192.168.2.10 -u mqttuser -P testing123 -t config/cabinet -m '{"plugin": {"modbus": {"config_update_interval": 120, "device_update_interval": 120, "device_path": "/dev/ttyUSB0", "devicelist": {"slave1": {"id": 1, "datapoints": {"relay_1": {"friendly_name": "Light 1", "fc": 5, "address": 0}, "relay_2": {"friendly_name": "Light 2", "fc": 5, "address": 1}, "relay_3": {"friendly_name": "Light 1", "fc": 5, "address": 2}, "relay_4": {"friendly_name": "Light 1", "fc": 5, "address": 3}, "relay_5": {"friendly_name": "Light 1", "fc": 5, "address": 4}, "relay_6": {"friendly_name": "Light 1", "fc": 5, "address": 5}, "relay_7": {"friendly_name": "Light 1", "fc": 5, "address": 6}, "relay_8": {"friendly_name": "Light 1", "fc": 5, "address": 7}}}}}}}'
+
+mosquitto_pub -h 192.168.2.10 -u mqttuser -P testing123 -t data/modbus/request -m '[{"id":1, "fc":5, "address":0, "value":1}, {"id":1, "fc":5,"address":1, "value":1}]'
+mosquitto_pub -h 192.168.2.10 -u mqttuser -P testing123 -t data/modbus/request -m '[{"id":1, "fc":15, "address":0, "value":[1,1,0,0,0,1,0,0]}]'
+
+
+mosquitto_pub -h 192.168.2.10 -u mqttuser -P testing123 -t data/modbus/request -m '{"id":1, "fc":5, "address":0, "value":0}'
+
+mosquitto_pub -h 192.168.2.10 -u mqttuser -P testing123 -t data/modbus/request -m '[{"id":1, "fc":5, "address":10, "value":1}]'

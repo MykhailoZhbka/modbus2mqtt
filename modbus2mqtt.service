@@ -1,0 +1,11 @@
+[Unit]
+Description=Modbus2MQTT Plugin
+Requires=network.target
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/modbus2mqtt
+
+[Install]
+WantedBy=multi-user.target

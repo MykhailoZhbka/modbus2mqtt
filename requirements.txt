@@ -1,0 +1,7 @@
+configparser==3.7.3
+paho-mqtt==1.4.0
+pymodbus==3.6.6
+pyModbusTCP==0.2.1
+pyserial==3.4
+six==1.11.0
+pyinstaller==6.5.0
